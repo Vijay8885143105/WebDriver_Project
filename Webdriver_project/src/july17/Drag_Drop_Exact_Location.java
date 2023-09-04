@@ -15,14 +15,14 @@ public class Drag_Drop_Exact_Location {
 		Thread.sleep(5000);
 		Actions ac = new Actions(driver);
 		//Switch to Frame
-		driver.switchTo().frame(0);
-		WebElement source = driver.findElement(By.id("draggable"));
-		WebElement target = driver.findElement(By.id("droppable"));
-		int x = target.getLocation().getX();
-		int y = target.getLocation().getY();
-		ac.dragAndDropBy(source, x, y).perform();
-		driver.close();
-
+		driver.switchTo().frame(0);	
+		  WebElement source = driver.findElement(By.id("draggable"));
+		  WebElement target= driver.findElement(By.id("droppable"));      
+		  int x = target.getLocation().getX(); 
+		  int y = target.getLocation().getY();
+		  ac.dragAndDropBy(source, x,y).perform(); 
+		  driver.close();
+		 
 	}
 
 }

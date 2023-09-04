@@ -1,19 +1,11 @@
 package july19;
 
-import java.sql.Driver;
-import java.util.Iterator;
 import java.util.List;
-
-
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.server.DriverFactory;
-import org.openqa.selenium.remote.server.handler.GetAlertText;
-
-import net.sourceforge.htmlunit.corejs.javascript.ast.WhileLoop;
 
 public class Calender2 {
 

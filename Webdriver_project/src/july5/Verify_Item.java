@@ -1,18 +1,15 @@
 package july5;
 
-import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.server.handler.GetAlertText;
 import org.openqa.selenium.support.ui.Select;
 
 public class Verify_Item {
 
-	private static final WebElement[] All_Items = null;
 
 	public static void main(String[] args) throws Throwable {  
     String Expected_Item = "baby";
@@ -28,7 +25,7 @@ public class Verify_Item {
 	List<WebElement>all_ItemsElements = listbox.getOptions();
 	System.out.println(all_ItemsElements.size());
 	Thread.sleep(1000);
-    for (WebElement each:All_Items) {
+	for (WebElement each:all_ItemsElements) {
 		String Actual_Items = each.getText();
 		Thread.sleep(1000);
 		System.out.println(Actual_Items);
