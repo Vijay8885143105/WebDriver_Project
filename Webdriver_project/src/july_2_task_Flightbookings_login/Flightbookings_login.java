@@ -16,7 +16,7 @@ public class Flightbookings_login {
 		driver.get("http://flights.qedgetech.com/");
 		Thread.sleep(5000);
 		driver.findElement(By.name("email")).sendKeys("sherividyasagar75@gmail.com");
-		driver.findElement(By.name("password")).sendKeys("9704640016");
+		driver.findElement(By.name("password")).sendKeys("8885143105");
 		driver.findElement(By.xpath("//button[normalize-space()='Sign In']")).click();
 		Thread.sleep(5000);
 		driver.quit();
