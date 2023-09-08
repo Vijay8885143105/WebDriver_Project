@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ALLHyperlnks_inpage {
+public class ALLHyperlnks_Naukri {
 
 	public static void main(String[] args) throws Throwable {
 		WebDriver dr = new ChromeDriver();
