@@ -45,6 +45,7 @@ public class Select_DeselectItems_Listbox {
 			System.out.println(all_items.size());
 			for (WebElement each : all_items) {
 				System.out.println(each.getText());
+				dr.quit();
 				
 			}
 

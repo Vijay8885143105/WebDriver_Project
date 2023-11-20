@@ -1,6 +1,5 @@
 package july8_task_Fb_radiobuttons_Names;
 
-import java.awt.event.FocusAdapter;
 import java.net.PortUnreachableException;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -9,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class July8_Collectionof_Radiobuttons_Names {
-
 	public static void main(String[] args) throws Throwable {
 		// create instant object
 		WebDriver driver = new ChromeDriver();
@@ -22,6 +20,7 @@ public class July8_Collectionof_Radiobuttons_Names {
 		Thread.sleep(5000);
 		//get collection of Radio buttons
 		List<WebElement>all_Radios = driver.findElements(By.xpath("//label[@class='_58mt']"));
+		Thread.sleep(6000);
 		System.out.println("Number of radio buttons are:::"+all_Radios.size());
 		//get collection of radio button names
 		for  (WebElement each : all_Radios) {

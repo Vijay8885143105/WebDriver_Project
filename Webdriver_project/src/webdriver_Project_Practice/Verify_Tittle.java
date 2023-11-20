@@ -10,7 +10,7 @@ public class Verify_Tittle {
 		driver.manage().window().maximize();
 		driver.get("https://google.com");
 		Thread.sleep(3000);
-		String Expected = "google";
+		String Expected = "hgfgfg";
 		String Actual   = driver.getTitle();
 		if (Expected.equalsIgnoreCase(Actual)) {
 			System.out.println("Tittle is matchig:::::"+Expected+"        "+Actual);
@@ -18,7 +18,7 @@ public class Verify_Tittle {
 		else
 		{
 			System.out.println("Tittle is Notmatchig:::::"+Expected+"      "+Actual);
-            Thread.sleep(3000);
+            Thread.sleep(5000);
             driver.quit();
 		}
 
