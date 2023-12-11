@@ -1,9 +1,11 @@
 package july7;
 
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ChildWindow_Handles {
@@ -33,7 +35,7 @@ public class ChildWindow_Handles {
 				System.out.println(pagetitle);
 				Thread.sleep(5000);
 				driver.close();
-				
+
 			}
 		}
 		//switch to parent window
@@ -42,10 +44,12 @@ public class ChildWindow_Handles {
 		driver.findElement(By.name("identifier")).sendKeys("pranga2010");
 		Thread.sleep(5000);
 		driver.quit();
-		
-			
-		}
+
+
 
 
 	}
+
+
+}
 

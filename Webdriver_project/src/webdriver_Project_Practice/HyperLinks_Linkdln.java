@@ -18,6 +18,9 @@ public class HyperLinks_Linkdln {
 		List<WebElement> All_Links = dr.findElements(By.tagName("a"));
 		Thread.sleep(5000);
 		System.out.println(All_Links.size());
+		for (WebElement each : All_Links) {
+			System.out.println(each.getText());
+		}
 
 	}
 

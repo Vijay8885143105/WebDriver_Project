@@ -1,5 +1,7 @@
 package july6;
 
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Iterator;
 
 import org.openqa.selenium.By;
@@ -23,35 +25,37 @@ public class Select_Items_Deselect_Itemsfrm_Selection {
 		boolean value = multiListbox.isMultiple();
 		System.out.println(value);
 		//select 0 to 7 item
-		for(int i=0;i<=7;i++);
+		int a[] = {1,0,3,6,8};
+		
+		
+		for(int i=0;i<a.length;i++)
 		{
-			Thread.sleep(5000);
-			multiListbox.selectByIndex(0);
-			Thread.sleep(5000);
-			multiListbox.selectByIndex(1);
-			Thread.sleep(1000);
-			multiListbox.selectByIndex(2);
-			Thread.sleep(1000);
-			multiListbox.selectByIndex(3);
-			Thread.sleep(1000);
-			multiListbox.selectByIndex(4);
-			Thread.sleep(1000);
-			multiListbox.deselectByIndex(5);
-			Thread.sleep(1000);
-			multiListbox.selectByIndex(6);
-			Thread.sleep(1000);
-			multiListbox.deselectByIndex(0);
-			Thread.sleep(5000);
-			multiListbox.deselectByIndex(3);
-			Thread.sleep(5000);
-			multiListbox.deselectAll();
-			Thread.sleep(5000);
-			driver.quit();
-		
+			Thread.sleep(500);
+			multiListbox.selectByIndex(a[i]);
+
 		}
-		
-		
-		
+
+		for(int i=0;i<a.length;i++)
+		{
+			Thread.sleep(500);
+			multiListbox.deselectByIndex(a[i]);
+
+		}
+
+		for(int i=0;i<a.length;i++)
+		{
+			Thread.sleep(500);
+			multiListbox.selectByIndex(a[i]);
+
+		}
+
+		multiListbox.deselectAll();
+
+
+		driver.quit();
+
+
+
 
 	}
 
