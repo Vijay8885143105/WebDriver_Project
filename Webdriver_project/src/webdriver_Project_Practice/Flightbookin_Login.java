@@ -1,6 +1,6 @@
 package webdriver_Project_Practice;
 
-import java.sql.Driver;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +18,9 @@ public class Flightbookin_Login {
 		dr.findElement(By.xpath("//input[@name='password']")).sendKeys("8885143105");
 		dr.findElement(By.xpath("//button[@type='submit']")).click();
 		dr.findElement(By.xpath("//i[@class='fa fa-gear']")).click();
+		Thread.sleep(4000);
 		dr.findElement(By.xpath("//i[@class='fa fa-lock']")).click();
+		Thread.sleep(4000);
 		dr.close();
 
 		
