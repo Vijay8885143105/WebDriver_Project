@@ -1,7 +1,5 @@
 package july5;
 
-import java.time.Year;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

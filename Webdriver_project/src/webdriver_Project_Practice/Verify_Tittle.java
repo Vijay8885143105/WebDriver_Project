@@ -17,7 +17,7 @@ public class Verify_Tittle {
 		}
 		else
 		{
-			System.out.println("Tittle is Notmatchig:::::"+Expected+"      "+Actual);
+			System.out.println("Tittle is Not matchig:::::"+Expected+"      "+Actual);
             Thread.sleep(5000);
             driver.quit();
 		}

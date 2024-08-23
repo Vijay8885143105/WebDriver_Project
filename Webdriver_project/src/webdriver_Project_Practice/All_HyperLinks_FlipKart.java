@@ -17,7 +17,7 @@ public class All_HyperLinks_FlipKart {
 		dr.get("https://flipkart.com");
 		Thread.sleep(3000);
 		Actions ac = new Actions(dr);
-		ac.moveToElement(dr.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']"))).click().perform();
+		ac.moveToElement(dr.findElement(By.xpath("//body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/header[1]/div[2]/div[2]/div[1]/div[1]/div[1]"))).click().perform();
 		//collection of hyperlinks in page
 		List<WebElement>all_Links = dr.findElements(By.tagName("a"));
 		System.out.println("Number of Links are:::::::::"+all_Links.size());

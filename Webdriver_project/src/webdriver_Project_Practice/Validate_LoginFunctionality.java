@@ -13,13 +13,13 @@ public class Validate_LoginFunctionality {
 		dr.manage().deleteAllCookies();
 		dr.get("http://orangehrm.qedgetech.com/");
 		Thread.sleep(3000);
-		//store webelement for username
+		//store webElement for Username
 		WebElement username =dr.findElement(By.name("txtUsername"));
 		username.clear();
 		username.sendKeys("Admin");
 		String Enterusername =username.getAttribute("value");
 		System.out.println(Enterusername);
-		//store webelement for password
+		//store webElement for password
 		WebElement password = dr.findElement(By.name("txtPassword"));
 		password.clear();
 		password.sendKeys("Qedge123!@#");

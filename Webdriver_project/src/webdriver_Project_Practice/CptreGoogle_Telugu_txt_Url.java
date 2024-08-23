@@ -17,6 +17,7 @@ public class CptreGoogle_Telugu_txt_Url {
 		//print webelement text url
 		String str1 =dr.findElement(By.linkText("తెలుగు")).getAttribute("href");
 		System.out.println(str1);
+		System.out.println(str1.length());
 		dr.close();
 
 		
