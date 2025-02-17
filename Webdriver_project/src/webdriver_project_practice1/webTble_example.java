@@ -7,11 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class webTble_Script {
+public class webTble_example {
     public static void main(String[] args) {
-        // Set the path for the WebDriver
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-
         // Initialize WebDriver
         WebDriver driver = new ChromeDriver();
 
